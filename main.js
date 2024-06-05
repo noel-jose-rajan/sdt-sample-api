@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // GET route to echo back the data
-app.get('/echo', (req, res) => {
+app.post('/', (req, res) => {
     // Check if the request contains a 'data' query parameter
     const data = req.body;
 
